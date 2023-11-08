@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        @apply m-0 p-0;
+    }
+
+    body {
+        @apply text-base text-font-color overflow-x-hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply m-0 p-0 text-font-color;
+    }
+
+    p {
+        @apply m-0 p-0 pb-0 text-base text-font-color opacity-80 no-underline;
+    }
+}
+
+@layer components {
+    .primary-btn {
+        @apply py-4 px-8 text-base font-semibold transition duration-300 ease-in no-underline rounded-full bg-primary-color text-font-light hover:border-transparent hover:bg-secondary-color hover:text-font-light;
+    }
+
+    .secondary-btn {
+        @apply py-4 px-8 text-base font-semibold transition duration-300 ease-in no-underline rounded-full bg-transparent text-font-color border-2 border-primary-color hover:border-transparent hover:bg-secondary-color hover:text-bg-color;
+    }
+
+    .main-title {
+        @apply text-4xl font-bold my-8 no-underline text-font-color;
+    }
+
+    .sub-title {
+        @apply text-6xl font-bold no-underline text-font-color;
+    }
+}
+
